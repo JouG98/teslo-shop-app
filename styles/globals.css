@@ -1,0 +1,133 @@
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+} 
+
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.fadeIn {
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+
+/* .circular-btn {
+  border-radius: 30px;
+} */
+
+.circular-btn:hover {
+  background-color: #274494 !important;
+  /* height: 100vh;
+  width: 100vw; */
+}
+
+
+.summary-card {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+/*========== SCROLL BAR ==========*/
+/* // para sacar el scrool */
+/* '&::-webkit-scrollbar': { display: 'none' },  */
+/* ::-webkit-scrollbar { display: 'none' } */
+
+body::-webkit-scrollbar {
+  width: .40rem;
+  /* background: #274494; */
+}
+
+
+body::-webkit-scrollbar-thumb {
+  border-radius: .2rem;
+  background: #323232;
+}
+
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #707070;
+  /* translate: ;
+  transform: translate(0, 45) */
+
+  /* rotate: 45; */
+}
+
+.etiqueta{
+  position: 'absolute';
+  border-radius: 0px;
+  z-index: 99;
+  top: 30px;
+  left: -40px;
+  width: 170px;
+  font-weight: 400;
+  transform: rotate(-45deg);
+}
+/* 
+.etiqueta{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    overflow: hidden;
+    width: 70px;
+    height: 70px;
+    z-index: 3;
+}
+
+.etiqueta:before {
+  left: 0;
+  bottom: 5px;
+  background-color: #007a2d;
+  height: 7px;
+}
+
+.etiqueta:before, .etiqueta:after {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  content: '';
+  z-index: 1;
+}
+
+.etiqueta:after {
+  right: 5px;
+  top: 0;
+  background-color: #007a2d;
+  width: 7px;
+}
+.etiqueta:before, .etiqueta:after {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  content: '';
+  z-index: 1;
+}
+
+.etiqueta span {
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  position: absolute;
+  left: -25px;
+  top: 10px;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  width: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #01ae43;
+  z-index: 2;
+  line-height: 25px;
+}
+
+. */

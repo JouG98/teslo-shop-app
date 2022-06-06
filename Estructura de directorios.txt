@@ -1,0 +1,24 @@
+Estructura de directorios
+
+
+En next:
+
+ ====  / la raiz  ===
+
+ en la / crear carpetas:
+
+    components
+        cart
+        layouts
+        ui
+        products
+
+en la rutas
+
+    pages
+        admin
+        auth
+        cart
+        orders
+        checkout
+        products

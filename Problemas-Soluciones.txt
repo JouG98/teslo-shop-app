@@ -1,0 +1,26 @@
+Problemas-Soluciones
+
+1. Proyecto Ecommer- Seccion add cart
+    React 18 - Cookie
+    
+    Problema:
+        Al momento de cargar las cookies dando un full refresh,
+        usando el useEffect se cargaba 2 veces en el cual la primera traia la 
+        data del arreglo de productos en el carrito, y luego traía un arreglo vacio,
+        en las cookies automaticamente se hacia ese cambio, por eso no se mostraba el listado
+        de los producto.
+
+    Solucion: 
+        Desabilitar del modo stricto en next-config - poner false.
+        NOTA: la solucion la encontre en los comentarios del curso
+                y se debe a la actualizacion de react 18.
+
+2. Proyecto Ecommerce - Ecommerce
+
+    Problema:
+        En desarrollo las cargas de las paginas demoran entre 30 hasta 80 segundos
+        en produccion no tiene inconveniente, pero al estar probando las acciones 
+        se pierde mucho tiempo en espera.
+
+    Solucion: 
+        No se ah encontrado aun.

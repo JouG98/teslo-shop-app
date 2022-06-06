@@ -1,0 +1,43 @@
+Obtener credenciales de desarrollo:
+
+    https://developer.paypal.com/home/
+
+    crear o acedet con una cuenta de paypal
+
+    -Crear la app 'nombre' para Obtener las credenciales
+        Client_Id = asdasdadsad
+        Client_Secret = asdasdadsad
+
+    -Agregar un usuario para pruebas
+        email: jogudev98@gmail.com
+        pass: JouDev98
+
+        establecemos cuenta personalizada
+
+    - Front:
+        -recurso:
+                https://www.npmjs.com/package/@paypal/react-paypal-js
+
+        -Poner Provider y boton de paypal
+        -Poner variable de entorno
+
+    -tener endpoint para tener acceso a los token: --Todo este proceso lo hace el backend y se lo crea
+
+        PAYPAL_OAUTH_URL=https://api-m.sandbox.paypal.com/v1/oauth2/token
+        PAYPAL_ORDERS_URL=https://api.sandbox.paypal.com/v2/checkout/orders
+
+        -PAYPAL_OAUTH_URL: en postman -POST
+            en Authorization:
+                    Basic Auth: poner
+                        username: Client_Id
+                        pass: Client_Secret
+
+            en Body
+                x-www-form-urlencoded:
+
+                Key: grant_type  Value: client_credentials
+
+
+    ver api en:
+        api/orders/pay
+

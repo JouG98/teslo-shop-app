@@ -1,0 +1,42 @@
+
+1. Crear el archivo "docker-compose.yaml" en la raiz del proyecto
+
+2. En el archivo se configura la img de mongo y otros mas
+
+    services:
+     entriesDB:
+        image: mongo:5.0.0
+        container_name: entries-database
+        ports:
+        - 27017:27017
+        volumes:
+        - ./mongo:/data/db
+
+3. abrir docker desktop
+
+4. ejecutar , para crear los archivos
+    docker-compose up -d
+
+5. Ignorar la carpeta de mongo
+    .gitignore
+        mongo/
+
+6. Crear las varible de entorno y su archivo
+        .env
+        .env.example
+
+6. Instaler mongoose
+
+    npm i mongoose
+    yarn add mongoose
+
+7. crear un folder database:
+
+    crear la configuracion de la coneccion de la db
+    crear el index de exportacion
+
+8. La coneccion
+        Generalmente conectaba la base de datos sin cerrarla
+            en el archivo de Server,
+        Para ahorar recursos la db solo se hace la coneccion cuando requiera una peticion
+        y luego se desconecta, eso se hace en los endpoint

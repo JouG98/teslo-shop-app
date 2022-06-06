@@ -1,0 +1,59 @@
+{/* Email and password */}
+                    {/* <Grid item xs={12} 
+                        sx={{ 
+                            display: 'flex', 
+                            flexDirection: 'column'
+                        }}
+                    >
+                        <InputLabel sx={{mb:1.5}}>
+                            <Typography variant="subtitle2">
+                                Email:
+                            </Typography>
+                        </InputLabel>
+
+                        <TextField 
+                        
+                            type={`email`}
+                            placeholder="Email" 
+                            // label={  <AlternateEmailOutlined /> } 
+                            variant="outlined" 
+                            
+                            fullWidth 
+                            { ...register('email', {
+                                required: `This fieds is required`,
+                                validate: validations.isEmail,
+                            })}
+
+                            error={ !!errors.email }
+                            helperText={ errors.email?.message }
+                        />
+
+                    </Grid> */}
+
+                    {/* <Grid item xs={12} 
+                        sx={{ 
+                            display: 'flex', 
+                            flexDirection: 'column'
+                        }}
+                    >
+                        <InputLabel sx={{mb:1.5}}>
+                            <Typography variant="subtitle2">
+                                Password:
+                            </Typography>
+                        </InputLabel>
+
+                        <TextField 
+                            // type={`password`}
+                            placeholder="Password:" 
+                            label={  <LockOutlined /> } 
+                            variant="outlined" 
+                            fullWidth 
+                            // { ...register('password', {
+                            //     required: `This filed is required`,
+                            //     minLength: { value: 6, message: `Caracter min: 6`}
+                            // })}
+                            // error={ !!errors.password }
+                            // helperText={ errors.password?.message }
+                        />
+
+                    </Grid> */}
